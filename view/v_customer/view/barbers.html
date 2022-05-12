@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no width=device-width, initial-scale=1 maximum-scale=1, minimum-scale=1">
+
+    <title>Cut-It! | Barbers</title>
+	
+	<!-- --------------Important CSS and JS ----------------- -->
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="../../css/Bootstrap_CDN/bootstrap.min.css">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="../../css/Custom/custom.css">
+    <link rel="stylesheet" href="../../v_customer/css/customer_contents.css">	
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="../../css/ScrollbarCustom/jquery.mCustomScrollbar.min.css">
+
+    <!-- Font Awesome JS -->
+    <script src="../../js/FontAwesomeJS/solid.js"></script>
+    <script src="../../js/FontAwesomeJS/fontawesome.js"></script>
+	
+	<!-- jQuery CDN - Minified version (=with AJAX) -->
+	<script src="../../js/jQueryCDN_MinifiedVersion/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="../../js/BootstrapJS/bootstrap.min.js"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="../../js/jQueryCustomContentScroller/jquery.mCustomScrollbar.concat.min.js"></script>
+	<!-- Our Custom JS -->
+	<script src="../../js/Custom/custom.js"></script>
+	<script src="../../js/Custom/app_customer_views/app_barbers.js"></script>
+	
+	<style rel="stylesheet" type="text/css">
+		#sidebar ul li #barbers {
+			color: #8d8c8c;
+			background: #f2f2f2;
+		}
+	</style>
+
+	 
+
+	<!-- -------------- ----------------- ----------------- -->
+	
+</head>
+
+<body>
+
+    <div class="wrapper">
+	
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+		
+            <div id="dismiss">
+                <i class="fas fa-arrow-left fa-lg"></i>
+            </div>
+
+            <div class="sidebar-header">
+				<i  style="margin-bottom:10px;" class="fas fa-user-circle fa-5x"></i>
+                <div id="cus_full_name">Firstname Lastname</div>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="active">
+					<a href="../index.html" id="home"><i style="margin-left: 10px;" class="fas fa-home"></i><span class="component_text">Home</span></a>
+				</li>
+
+				<li>
+					<a href="./account.html" id="account"><i style="margin-left: 10px" class="fas fa-user"></i><span class="component_text">Account</span></a>
+				</li>
+
+				<li>
+					<a href="./barbers.html" id="barbers"><i style="margin-left: 10px" class="fas fa-warehouse"></i><span class="component_text">Barbers</span></a>
+				</li>
+
+				<li>
+					<a href="./bookings.html" id="bookings"><i style="margin-left: 10px" class="fas fa-book"></i><span class="component_text">Bookings</span></a>
+				</li>
+				
+				<div class="horizontal_line"></div>
+				
+				<li>
+					<a href="./today_deals.html" id="today_deals"><i style="margin-left: 10px" class="fas fa-handshake"></i><span class="component_text">Today's Deals</span></a>
+				</li>
+				
+				<div class="horizontal_line"></div>
+				
+				<li>
+					<a href="./help.html" id="help"><i style="margin-left: 10px" class="fas fa-question"></i><span class="component_text">Help</span></a>
+				</li>
+
+				<li>
+					<a id="sign_out"><i style="margin-left: 10px" class="fas fa-sign-out-alt"></i><span class="component_text">Sign Out</span></a>
+				</li>
+
+			</ul>
+			
+        </nav>
+
+
+
+
+        <!-- Page Content  -->
+        <div id="content">
+			<div id="content_head">
+				<i  id="sidebarCollapse" class="fas fa-bars fa-2x"></i>
+				<span class="cont_head_text">Barbers<span>
+			</div>
+			
+			<div id="content_body">
+			
+				<a class="inline_link" data-toggle="collapse" data-target="#col"><i class="fas fa-search"></i> Filter by Location</a>
+
+				<div id="col" class="collapse">
+					<input type="text" name="Location" id="location" placeholder="Location" required>
+					<div class="submit">
+							<a class="button" id="location_search">Search</a>
+					</div>
+				</div>
+
+				<div id="barber_list"></div>
+
+					
+			</div>
+		
+		</div>
+		
+    </div>
+
+
+
+	<!-- Overlay  -->
+    <div class="overlay"></div>
+
+</body>
+
+</html>

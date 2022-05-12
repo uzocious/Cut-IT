@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'verela round', sans-serif;
+    background:#f9f9f9;
+    color: black;
+  }
+
+.cancel {
+    height: 65px;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+.back_arrow {
+    height: 65px;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 35px;
+}
+
+.cancel a,
+.back_arrow a {
+    background: #f9f9f9;
+    border: 1px solid #f9f9f9;
+    border-radius: 100%;
+    color: #8d8c8c !important;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.cancel a:hover,
+.back_arrow a:hover {
+    background: #bdbdbd;
+    border: 1px solid #bdbdbd;
+    text-decoration: none;
+  }
+
+.sub_text {
+    text-align: center;
+    color: black;
+    font-size: 23px;
+    letter-spacing: 0.1em;
+    margin-bottom: 12px;
+}
+
+input{
+    display:block;
+    height:50px;
+    width:80%;
+    margin:20px auto;
+    border:none;
+    background-color: #f9f9f9;
+    font-size: 15px;
+    font-weight: normal;
+    outline: none;
+  }
+  
+.email,
+.password,
+.first_name,
+.last_name,
+.business_name,
+.business_email,
+.business_phone_no{
+    position:relative;
+    border-bottom:1px solid #8d8c8c;
+    padding-left:20px;
+    font-family: 'verela round', sans-serif;
+    text-transform:none;
+    color: black;
+  }
+
+
+.inline_link{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.inline_link a {
+    background: #f9f9f9;
+    border: 1px solid #f9f9f9;
+    color: #8d8c8c !important;
+    display: inline-block;
+    text-decoration: underline;
+    font-weight: normal;
+    padding: 5px;
+    
+}
+
+.inline_link a:hover {
+    background: #bdbdbd;
+    border-radius: 10px;
+    border: 1px solid #f9f9f9;
+    text-decoration: none;
+}
+
+.submit {
+    text-align: center;
+}
+
+.button {
+    background: #8d8c8c;
+    border: 1px solid #8d8c8c;
+    border-radius: 3px;
+    color: white;
+    display: inline-block;
+    margin: 10px;
+    padding: 14px 130px;;
+    text-decoration: none;
+    font-weight: normal;
+    position: relative;
+    top: 10px;
+  }
+
+.button:hover {
+    background: #bdbdbd;
+    border: 1px solid #bdbdbd;
+    color: white;
+  }

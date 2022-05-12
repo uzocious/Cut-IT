@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no width=device-width, initial-scale=1 maximum-scale=1, minimum-scale=1">
+
+    <title>Cut-It! | Business | Help</title>
+	
+	<!-- --------------Important CSS and JS ----------------- -->
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="../../css/Bootstrap_CDN/bootstrap.min.css">
+    <!-- Our Custom CSS -->
+	<link rel="stylesheet" href="../../css/Custom/custom.css">
+	<link rel="stylesheet" href="../css/buss_customer_contents.css">	
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="../../css/ScrollbarCustom/jquery.mCustomScrollbar.min.css">
+
+    <!-- Font Awesome JS -->
+    <script src="../../js/FontAwesomeJS/solid.js"></script>
+    <script src="../../js/FontAwesomeJS/fontawesome.js"></script>
+	
+	<!-- jQuery CDN - Minified version (=with AJAX) -->
+	<script src="../../js/jQueryCDN_MinifiedVersion/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="../../js/BootstrapJS/bootstrap.min.js"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="../../js/jQueryCustomContentScroller/jquery.mCustomScrollbar.concat.min.js"></script>
+	<!-- Our Custom JS -->
+	<script src="../../js/Custom/custom.js"></script>
+	<script src="../../js/Custom/app_buss_customer_views/app_buss_help.js"></script>
+	
+	<style rel="stylesheet" type="text/css">
+		#sidebar ul li #buss_help {
+			color: #8d8c8c;
+			background: #f2f2f2;
+		}
+	</style>
+
+	 
+
+	<!-- -------------- ----------------- ----------------- -->
+	
+</head>
+
+<body>
+
+    <div class="wrapper">
+	
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+		
+            <div id="dismiss">
+                <i class="fas fa-arrow-left fa-lg"></i>
+            </div>
+
+            <div class="sidebar-header">
+				<i  style="margin-bottom:10px;" class="fas fa-building fa-5x"></i>
+                <div id="buss_name">Business Name</div>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="active">
+					<a href="../index.html" id="buss_home"><i style="margin-left: 10px;" class="fas fa-home"></i><span class="component_text">Home</span></a>
+				</li>
+
+				<li>
+					<a href="./buss_account.html" id="buss_account"><i style="margin-left: 10px" class="fas fa-user"></i><span class="component_text">Account</span></a>
+				</li>
+				
+				<li>
+					<a href="./buss_appointments.html" id="buss_appointments"><i style="margin-left: 10px" class="fas fa-calendar-check"></i><span class="component_text">Appointments</span></a>
+				</li>
+				
+				<div class="horizontal_line"></div>
+					
+				<li>
+					<a href="./buss_offers.html" id="buss_offers"><i style="margin-left: 10px" class="fas fa-thumbs-up"></i><span class="component_text">Offers</span></a>
+				</li>
+				
+				<div class="horizontal_line"></div>
+				
+				<li>
+					<a href="./buss_help.html" id="buss_help"><i style="margin-left: 10px" class="fas fa-question"></i><span class="component_text">Help</span></a>
+				</li>
+
+				<li>
+					<a id="buss_sign_out"><i style="margin-left: 10px" class="fas fa-sign-out-alt"></i><span class="component_text">Sign Out</span></a>
+				</li>
+				
+			</ul>
+			
+        </nav>
+
+
+
+
+        <!-- Page Content  -->
+        <div id="content">
+			<div id="content_head">
+				<i  id="sidebarCollapse" class="fas fa-bars fa-2x"></i>
+				<span class="cont_head_text">Help<span>
+			</div>
+			
+			<div id="content_body">
+			
+				<div id="content_body_buss_help">
+
+					<p>Got a question? We'll love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+
+					<input type="text" name="Name" id="business_name" placeholder="Name" readonly>
+	
+					<input type="text" name="Email" id="buss_email" placeholder="Email" readonly>
+	
+					<textarea name="Message" id="buss_message" placeholder="Message..." style="height:120px"></textarea>
+
+					<div class="submit">
+							<a class="button" id="buss_help_submit">Send Message</a>
+					</div>
+
+				</div>
+				
+			</div>
+		
+		</div>
+		
+    </div>
+
+
+
+	<!-- Overlay  -->
+    <div class="overlay"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,285 @@
+/* --------------------------------------------------------------------- */
+/* General style */
+/* --------------------------------------------------------------------- */
+p {
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+}
+
+input, textarea{
+    display:block;
+    height:50px;
+    width:80%;
+    margin:12px auto;
+    border:none;
+    background-color: #f9f9f9;
+    font-size: 15px;
+    font-weight: normal;
+    outline: none;
+  }
+
+
+input, textarea{
+    position:relative;
+    border-bottom:1px solid #8d8c8c;
+    padding-left:10px;
+    font-family: 'verela round', sans-serif;
+    text-transform:none;
+    color: black;
+  }
+
+.inline_link{
+    margin-top: 10px;
+    background: #f9f9f9;
+    border: 1px solid #f9f9f9;
+    color: #8d8c8c !important;
+    display: inline-block;
+    text-decoration: underline;
+    font-weight: normal;
+    border-bottom: 1px solid #8d8c8c;
+}
+
+.submit {
+    text-align: center;
+}
+
+
+.button {
+    background: #8d8c8c;
+    border: 1px solid #8d8c8c;
+    border-radius: 3px;
+    color: white !important;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 100px;;
+    text-decoration: none;
+    font-weight: normal;
+    position: relative;
+    top: 10px;
+  }
+
+.button:hover {
+    background: #bdbdbd;
+    border: 1px solid #bdbdbd;
+    color: white !important;
+  }
+
+
+#deleteButton {
+    border: none;
+    color: #8d8c8c;
+    background: white;
+    padding: 5px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+
+
+
+
+/* --------------------------------------------------------------------- */
+/* Index styles */
+/* --------------------------------------------------------------------- */
+#content_sub_body {
+    margin-top: 10px;
+}
+
+#content_sub_body p {
+    text-align: justify;
+}
+
+
+
+
+
+/* --------------------------------------------------------------------- */
+/* Account styles */
+/* --------------------------------------------------------------------- */
+.section1 {
+    text-align: center;
+    margin: 10px;
+}
+.section1 img{
+    max-width: 200px;
+    min-width: 200px;
+    max-height: 200px;
+    min-height: 200px;
+    border-radius: 50%;
+}
+
+.section2 {
+    margin: 30px 10px;
+}
+
+.section3 {
+    margin: 30px 10px;
+}
+
+.section4 {
+    margin: 30px 10px;
+}
+
+.section5 {
+    margin: 30px 10px;
+}
+
+#content_body_buss_account h6 {
+    text-align: center;
+    font-weight: 600;
+}
+
+
+
+
+/* --------------------------------------------------------------------- */
+/* Appointments styles */
+/* --------------------------------------------------------------------- */
+#content_body_buss_appointments h5 {
+    text-align: center;
+}
+
+.appointment_result{
+    margin: 20px 5px;
+    padding: 5px 3px;
+    background-color: #8d8c8c;
+    color: white;
+    text-align: right;
+}
+
+.appointment_result h5 {
+    text-transform: capitalize;
+    text-align: left !important;
+}
+
+.appointment_result h6 {
+    text-align: left !important;
+}
+
+
+
+/* --------------------------------------------------------------------- */
+/* Car Parts styles */
+/* --------------------------------------------------------------------- */
+#content_body_buss_car_parts h5 {
+    text-align: center;
+}
+
+.car_part_result {
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+    padding: 5px 2px;
+    background-color: #e5e5e5;
+    display: flex;
+    text-align: right;
+}
+.car_part_result img {
+    padding: 5px;
+    width: 100%;
+    max-height: auto;
+    border-radius: 10%;
+}
+.car_part_result div:nth-of-type(1) {
+    flex-basis: 200px;
+}
+.car_part_result div:nth-of-type(2) {
+    flex-basis: 500px;
+}
+.car_part_result h5 {
+    text-transform: capitalize;
+    text-align: left !important;
+}
+.car_part_result h6 {
+    text-align: left !important;
+}
+
+
+
+
+
+
+/* --------------------------------------------------------------------- */
+/* Hire Tools styles */
+/* --------------------------------------------------------------------- */
+#content_body_buss_hire_tools h5 {
+    text-align: center;
+}
+
+.hire_tool_result {
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+    padding: 5px 2px;
+    background-color: #e5e5e5;
+    display: flex;
+    text-align: right;
+}
+.hire_tool_result img {
+    padding: 5px;
+    width: 100%;
+    max-height: auto;
+    border-radius: 10%;
+}
+.hire_tool_result div:nth-of-type(1) {
+    flex-basis: 200px;
+}
+.hire_tool_result div:nth-of-type(2) {
+    flex-basis: 500px;
+}
+.hire_tool_result h5 {
+    text-transform: capitalize;
+    text-align: left !important;
+}
+.hire_tool_result h6 {
+    text-align: left !important;
+}
+
+
+
+
+/* --------------------------------------------------------------------- */
+/* Offers styles */
+/* --------------------------------------------------------------------- */
+#content_body_buss_offers h5 {
+    text-align: center;
+}
+
+.offers_result {
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+    padding: 5px 5px;
+    background-color: #8d8c8c;
+    color: white;
+    text-align: right;
+}
+.offers_result h4{
+    text-align: center !important;
+    text-transform: capitalize;
+}
+.offers_result h6{
+    text-align: justify !important;
+}
+
+
+
+
+
+
+/* --------------------------------------------------------------------- */
+/* Help styles */
+/* --------------------------------------------------------------------- */
+#content_body_buss_help p {
+    text-align: center;
+}
+
+
+
+

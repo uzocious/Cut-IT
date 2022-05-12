@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no width=device-width, initial-scale=1 maximum-scale=1, minimum-scale=1">
+
+    <title>Cut-It! | Business | Account</title>
+	
+	<!-- --------------Important CSS and JS ----------------- -->
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="../../css/Bootstrap_CDN/bootstrap.min.css">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="../../css/Custom/custom.css">
+	<link rel="stylesheet" href="../css/buss_customer_contents.css">	
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="../../css/ScrollbarCustom/jquery.mCustomScrollbar.min.css">
+
+    <!-- Font Awesome JS -->
+    <script src="../../js/FontAwesomeJS/solid.js"></script>
+    <script src="../../js/FontAwesomeJS/fontawesome.js"></script>
+	
+	<!-- jQuery CDN - Minified version (=with AJAX) -->
+	<script src="../../js/jQueryCDN_MinifiedVersion/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="../../js/BootstrapJS/bootstrap.min.js"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="../../js/jQueryCustomContentScroller/jquery.mCustomScrollbar.concat.min.js"></script>
+	<!-- Our Custom JS -->
+	<script src="../../js/Custom/custom.js"></script>
+	<script src="../../js/Custom/app_buss_customer_views/app_buss_account.js"></script>
+	
+	<style rel="stylesheet" type="text/css">
+		#sidebar ul li #buss_account {
+			color: #8d8c8c;
+			background: #f2f2f2;
+		}
+	</style>
+
+	 
+
+	<!-- -------------- ----------------- ----------------- -->
+	
+</head>
+
+<body>
+
+    <div class="wrapper">
+	
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+		
+            <div id="dismiss">
+                <i class="fas fa-arrow-left fa-lg"></i>
+            </div>
+
+            <div class="sidebar-header">
+				<i  style="margin-bottom:10px;" class="fas fa-building fa-5x"></i>
+                <div id="buss_name">Business Name</div>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="active">
+					<a href="../index.html" id="buss_home"><i style="margin-left: 10px;" class="fas fa-home"></i><span class="component_text">Home</span></a>
+				</li>
+
+				<li>
+					<a href="./buss_account.html" id="buss_account"><i style="margin-left: 10px" class="fas fa-user"></i><span class="component_text">Account</span></a>
+				</li>
+
+				<li>
+					<a href="./buss_appointments.html" id="buss_appointments"><i style="margin-left: 10px" class="fas fa-calendar-check"></i><span class="component_text">Appointments</span></a>
+				</li>
+				
+				<div class="horizontal_line"></div>
+		
+				<li>
+					<a href="./buss_offers.html" id="buss_offers"><i style="margin-left: 10px" class="fas fa-thumbs-up"></i><span class="component_text">Offers</span></a>
+				</li>
+				
+				<div class="horizontal_line"></div>
+				
+				<li>
+					<a href="./buss_help.html" id="buss_help"><i style="margin-left: 10px" class="fas fa-question"></i><span class="component_text">Help</span></a>
+				</li>
+
+				<li>
+					<a id="buss_sign_out"><i style="margin-left: 10px" class="fas fa-sign-out-alt"></i><span class="component_text">Sign Out</span></a>
+				</li>
+				
+			</ul>
+			
+        </nav>
+
+
+
+
+        <!-- Page Content  -->
+        <div id="content">
+			<div id="content_head">
+				<i  id="sidebarCollapse" class="fas fa-bars fa-2x"></i>
+				<span class="cont_head_text">Account<span>
+			</div>
+			
+			<div id="content_body">
+			
+				<div id="content_body_buss_account">
+
+					<div class="section1">
+						<img id="barber_image" src="../img/barber.jpg" />
+					</div>
+	
+					<div class="section2">
+						
+						<div style="text-align: right;" onclick="EditProfile()" data-toggle="collapse" data-target="#col1"><i class="fas fa-edit"></i> Edit Profile</div>
+
+						<span style="margin-left: 10%">Profile:</span>
+						<input type="text" name="Business name" id="business_name" placeholder="Business name" readonly>
+    			
+						<input type="text" name="Business Phone no" id="buss_phone_no" placeholder="Business phone no" readonly>
+						
+						<input type="text" name="Business email" id="buss_email" placeholder="Business email" readonly>
+						<h6 style="color:red; text-align:center;">Email can not be changed.</h6>
+    
+						<div id="col1" class="collapse">
+							<div class="submit">
+								<a class="button" id="buss_profile_update">Submit</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="horizontal_line"></div>
+	
+					<div class="section3">
+	
+						<div style="text-align: right;" onclick="EditAddress()" data-toggle="collapse" data-target="#col2"><i class="fas fa-edit"></i> Edit Address</div>
+
+						<span style="margin-left: 10%">Address:</span>
+						<input type="text" name="Address" id="buss_address" placeholder="Address" readonly>
+	
+						<input type="text" name="City" id="buss_city" placeholder="City/Town" readonly>
+			
+						<input type="text" name="County" id="buss_county" placeholder="County" readonly>
+
+						<input type="text" name="Country" id="buss_country" value="United Kingdom" placeholder="Country" readonly>
+
+						<input type="text" name="Post Code" id="buss_postcode" placeholder="Post Code" readonly>
+	
+						<div id="col2" class="collapse">
+							<div class="submit">
+								<a class="button" id="buss_address_update">Submit</a>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="horizontal_line"></div>
+
+					<div class="section4">
+
+						<div style="text-align: right;" onclick="EditBusinessInfo()" data-toggle="collapse" data-target="#col3"><i class="fas fa-edit"></i> Edit Gar. Info</div>
+
+						<span style="margin-left: 10%">Latitude and Longitude:</span>
+						<input type="text" name="Business Latitude" id="business_latitude" placeholder="Latitude (e.g. 51.877721)" readonly>
+	
+						<input type="text" name="Business Longitude" id="buss_longitude" placeholder="Longitude (e.g. -0.409078)" readonly>
+				
+						<br />
+						<span style="margin-left: 10%">Opening Days & Time:</span>
+						<input type="text" name="Business Days" id="buss_days" placeholder="Days: (e.g. Monday, Tuesday, Wed...)" readonly>
+
+						<input type="text" name="Business Times" id="buss_times" placeholder="Time: (e.g. 09:00am - 05:00pm)" readonly>
+
+						<div id="col3" class="collapse">
+							<div class="submit">
+								<a class="button" id="buss_info_update">Submit</a>
+							</div>
+						</div>
+					</div>
+	
+					<div class="horizontal_line"></div>
+
+					<div class="section5">
+
+						<h6>Change Password:</h6>
+	
+						<input type="password" name="New Password" id="buss_new_password" placeholder="New password" required>
+		
+						<input type="password" name="Confirm password" id="buss_confirm_password" placeholder="Confirm password" required>
+	
+						<div class="submit">
+								<a class="button" id="buss_account_change_password">Reset</a>
+						</div>
+
+						<br/>
+
+					</div>
+			
+					
+				</div>
+
+			</div>
+		
+		</div>
+		
+    </div>
+
+
+
+	<!-- Overlay  -->
+    <div class="overlay"></div>
+
+</body>
+
+</html>
